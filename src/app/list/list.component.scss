@@ -1,0 +1,22 @@
+$base-color: rgb(72, 176, 245);
+
+ul{
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  li{
+    text-align: center;
+    font-size:2em;
+    cursor: pointer;
+    color: inherit;
+    margin: 1em;
+    transition: .5s color, .7s background-color, 1s border-radius;
+    &:hover{
+      color: darken($base-color, 10%);
+      background: lighten(complement($color: $base-color),20%);
+      border-radius: 1em;
+      transition: .5s color,.7s background-color, 1s border-radius;
+    }
+  }
+}
